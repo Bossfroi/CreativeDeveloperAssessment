@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          background-color: black;
+        }
+        #background {
+            position: absolute;
+            height: 645px;
+            width: 600px;
+            top: 0;
+            left: 0;
+            margin-left: 400px;
+        }
+        #girl {
+            position: absolute;
+            background-color: transparent;
+            width: 500px;
+            margin-top: 140px;
+            opacity: 0;
+            transition: opacity 2s;
+            margin-left: 450px;
+        }
+        #heading1 {
+            background-color: transparent;
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            margin-left: 200px;
+            margin-top: 200px;
+            transition: opacity 5s;
+            opacity: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="assets/background.png" alt="" id="background">
+            <img src="assets/girl.png" alt="" id="girl">
+            <img src="assets/headline1.png" alt="weproduce top talents" id="heading1">
+            <img src="assets/headline2.png" alt="weproduce top talents" id="heading2">
+            <!-- Add any other images you want here -->
+        </div>
+    </nav>
+</body>
+<script>
+    function fadeElementInAndOut(elementId) {
+        var element = document.getElementById(elementId);
+         element.style.opacity = 1;
+
+        setTimeout(function() {
+            element.style.opacity = 0;
+        }, 4000);
+
+        setTimeout(function() {
+            element.style.opacity = 0;
+        }, 1227000);
+    }
+    const elementToAnimate = document.getElementById("heading1");
+    const animationDuration = 2000; 
+    const animationInterval = 3000; 
+
+    function animateLeft() {
+    elementToAnimate.style.transition = `left ${animationDuration / 2}ms ease-in`;
+    elementToAnimate.style.left = "120px";
+    setTimeout(() => {
+    elementToAnimate.style.transition = `left ${animationDuration / 2}ms ease-out`;
+    elementToAnimate.style.left = "250px";
+      }, animationDuration / 5);
+    }
+   window.onload = function() {
+        fadeElementInAndOut("girl");
+        fadeElementInAndOut("heading1");
+        animateLeft();
+    };
+
+
+</script>
+</html>
