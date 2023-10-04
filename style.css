@@ -1,0 +1,101 @@
+*{
+    background-color: black;
+    position: absolute;
+       }
+       body {
+           margin: 0;
+           padding: 0;
+     
+           overflow: hidden;
+       }
+       #background {
+           position: absolute;
+           height: 645px;
+           width: 700px;
+           top: 0;
+           left: 300px;
+       }
+       #girl {
+           position: absolute;
+           background-color: transparent;
+           width: 500px;
+           margin-top: 140px;
+           opacity: 0;
+           transition: opacity 2s;
+           left: 450px;
+       }
+       #headline1 {
+           background-color: transparent;
+     
+           display: flex;
+           height: 500px;
+           width: 600px;
+           margin-left: 200px;
+           margin-top: 200px;
+           opacity: 0;
+           left: 0;
+           transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out, transform 0.5s ease-in-out;
+       }
+       #headline2 {
+           background-color: transparent;
+           display: flex;
+           height: 150px;
+           width: 250px;
+           margin-left: 359px;
+           display: block;
+           opacity: 0;
+           left: 1800px; /* Updated this value */
+           position: absolute;
+           margin-top: 50px;
+           transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out; /* Added transition */
+       }
+       #subhead{
+           background-color: transparent;
+           display: flex;
+           height: 150px;
+           width: 300px;
+           margin-bottom: 2px;
+           display: block;
+           opacity: 0;
+           left: 600px; /* Updated this value */
+           position: absolute;
+           margin-top: 250px;
+           transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out; /* Added transition */
+       }
+       #learnmore {
+           position: absolute;
+           background-color: transparent;
+           width: 210px;
+           height: 100px;
+           margin-top: 10px;
+           opacity: 0 0.5s ease-in-out, left 0.2s ease-in-out;
+           left: 530px;
+           margin-top: 450px;
+       }
+       #logokodeg{   
+           background-color: transparent;
+           position: absolute;
+           display: flex;
+           height: 140px;
+           width: 160px;
+           margin-bottom: 2px;
+           display: block;
+           opacity: 0;
+           left: 0.01em;
+           margin-top: 10px;
+           transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out; /* Added transition */
+       }
+       #reply{
+           background-color: transparent;
+           display: flex;
+           height: 70px;
+           width: 150px;
+           position: absolute;
+           margin-left: 570px;
+           display: block;
+           opacity: 0;
+           left: 1000px; /* Updated this value */
+           position: absolute;
+           margin-top:550px;
+           transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out; /* Added transition */
+       }
